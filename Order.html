@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Order-Dosa World</title>
+    <style>
+      a{
+        color: brown;
+        font-size: 30px;
+      }
+      a:hover{
+        background-color: wheat;
+      }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md justify-content-center" style="background-color: lightsalmon;">
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img src="logo.png" class="navbar-brand" height="200" width="300">
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Catering.html">Catering</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="locations.html">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About us.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Order.html">Order now</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <br/>
+      <h3>ORDER NOW</h3>
+      <p>Order form for our newly launched menu!</p>
+    <div class="container">
+        <img src="order-now.jpg" alt="Order Now">
+        </div>
+        <br/>
+      <div class="container">
+        <form method="post" action="SuccessfulOrder.html" class="was-validated">
+            <div class="form-group">
+              <label for="NAME">Name *</label>
+              <input type="text" class="form-control-sm" id="uname" placeholder="Enter your name here" name="NAME" required>
+              <div class="valid-feedback">Valid input</div>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+                <div class="form-group">
+                  <label for="PHN">Phone *</label>
+                  <input type="number" class="form-control-sm" id="PHN" placeholder="Enter phone number" name="PHN" required>
+                  <div class="valid-feedback">Valid input</div>
+                  <div class="invalid-feedback">Please enter mobile number.</div>
+                </div>
+                <div class="form-group">
+                  <label for="Home">Home/Delivery Address *</label>
+                  <br/>
+                  <textarea name="Home" rows="5" required></textarea>
+                  <div class="valid-feedback">Valid input</div>
+                  <div class="invalid-feedback">Please enter your address</div>
+                </div>
+                <div class="form-group">
+                  <label for="Menu">Please type in your order from the menu above. Please mention the item and quantities. Minimum pack size is mentioned in the
+                    <br/>
+                     menu, your quantity should be the number of packs.
+                     <br/>
+                    Eg. Muruku 2 packs would mean 250gms X 2= 500gms *</label>
+                    <br/>
+                  <textarea name="menu" rows="5" required></textarea>
+                  <div class="valid-feedback">Valid input</div>
+                  <div class="invalid-feedback">Please enter your order details above</div>
+                </div>
+                <p>Kindly select the mode of payment *</p>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">PayTM
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">GooglePay
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio" checked>Cash
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" name="Terms" required>
+                    <div class="valid-feedback">Thankyou for agreeing our terms and conditions</div>
+                  <div class="invalid-feedback">Please agree our terms and condition before proceeding</div>
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </form>
+            </div>
+    </body>
+    </html>
